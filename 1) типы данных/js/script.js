@@ -1,5 +1,5 @@
 let money = prompt(" Ваш бюджет ? ");
-let name = prompt( "Название вашего магазина ? " );
+let name = prompt( "Название вашего магаза ? " );
 
 
 
