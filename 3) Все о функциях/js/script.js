@@ -14,7 +14,7 @@ function start() {
 	time = 21; 
 }
 
-// start();
+start();
 
 let mainList = {
 	budget: money,
@@ -26,10 +26,10 @@ let mainList = {
 }
 
 function chooseGoods(){
-	for (let i =0; i < 5; i++){
-		let a = prompt ('Какой тип товаров будем продавать?');
+	for (let i = 0; i < 5; i++){
+		let a = prompt('Какой тип товаров будем продавать?');
 		
-		if ((typeof(a)) === 'string' && (typeof(a)) != null && a !='' && a.lengh < 50  ){
+		if ((typeof(a)) === 'string' && (typeof(a)) != null && a != '' && a.lengh < 50  ){
 			console.log("Все верно !");
 			mainList.shopGoods[i] = a;
 		} else {
@@ -37,7 +37,7 @@ function chooseGoods(){
 		}
 	}
 }
-// chooseGoods();
+chooseGoods();
 
 function workTime(time) {
 
@@ -51,7 +51,7 @@ function workTime(time) {
 				console.log ('В сутках только 24 часа!');
 			};
 }
-workTime(18);
+workTime(4);
 
 alert ( " Ваш бюджет на 1 день = " + mainList.budget / 30  );
 
